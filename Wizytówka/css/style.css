@@ -1,0 +1,283 @@
+/* font-family: 'Quicksand', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Nawigacja */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  font-size: 0px;
+}
+
+nav a {
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 25%;
+  line-height: 10vh;
+  text-align: center;
+  transition: 1s;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+nav a i {
+  margin-right: 10px;
+}
+nav a:hover {
+  background-color: darkblue;
+}
+@media (min-width: 320px) {
+  nav a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 640px) {
+  nav a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  nav a {
+    font-size: 30px;
+  }
+}
+/* Header */
+header {
+  position: relative;
+  height: 100vh;
+  background-color: gray;
+}
+div.wrap {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: white;
+  padding-top: 16vh;
+  line-height: 10vh;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 500;
+}
+header img {
+  height: 60vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 640px) and (orientation: portrait) {
+  div.wrap {
+    font-size: 2.4em;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (orientation: landscape) {
+  div.wrap {
+    text-align: left;
+    padding-top: 30vh;
+    padding-left: 5vw;
+  }
+  header img {
+    height: 90vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+  div.wrap {
+    padding-top: 20vh;
+    width: 60%;
+    font-size: 2.2em;
+    line-height: 2.5;
+  }
+  div.wrap h2 {
+    word-wrap: break-word;
+  }
+}
+/* Describe */
+.describe {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  line-height: 2;
+}
+.describe p {
+  padding: 10vh 5%;
+}
+@media (min-width: 320px) {
+  .describe p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 400px) {
+  .describe p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 640px) {
+  .describe p {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .describe p {
+    font-size: 47px;
+  }
+}
+@media (min-width: 520px) and (orientation: landscape) {
+  .describe p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) and (orientation: landscape) {
+  .describe p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+  .describe p {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) and (orientation: landscape) {
+  .describe p {
+    font-size: 40px;
+  }
+}
+/* motto */
+.motto {
+  height: 60vh;
+}
+.logo {
+  background-image: url(../jpg/mountain-landscape-2031539_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: darkblue;
+  height: 60vh;
+  line-height: 2.5;
+  padding-top: 30vh;
+}
+.logo p {
+  font-weight: 100;
+}
+@media (min-width: 760px) {
+  .logo {
+    font-size: 25px;
+  }
+}
+
+/* Hobby */
+.hobby h1 {
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+.pictures div {
+  float: left;
+  height: 50vh;
+  width: 50%;
+}
+.mountains {
+  background-image: url(../jpg/mountains-7427623_1280.jpg);
+  background-size: cover;
+  background-position: top left;
+}
+.bike {
+  background-image: url(../jpg/trail-riding-6725753_1280.jpg);
+  background-size: cover;
+  background-position: top left;
+}
+.stars {
+  background-image: url(../jpg/astronomy-1866822_1280.jpg);
+  background-size: cover;
+  background-position: bottom left;
+}
+.sea {
+  background-image: url(../jpg/waves-3473335_1280.jpg);
+  background-size: cover;
+  background-position: bottom left;
+}
+.pictures p {
+  line-height: 50vh;
+  text-align: center;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+@media (min-width: 320px) and (orientation: portrait) {
+  .pictures div {
+    float: none;
+    height: 50vh;
+    width: 100%;
+  }
+}
+/* Contact */
+.contact {
+  padding: 50px 30px;
+  background-color: black;
+}
+.contact p {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.contact p i {
+  padding: 10px;
+}
+@media (min-width: 320px) {
+  .contact p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 760px) {
+  .contact p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact p {
+    font-size: 40px;
+  }
+}
+/* Footer */
+footer {
+  height: 10vh;
+  background-color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 10vh;
+}

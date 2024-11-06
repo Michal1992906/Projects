@@ -1,0 +1,165 @@
+/* font-family: 'Quicksand', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Nawigacja */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  font-size: 0px;
+}
+
+nav a {
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 25%;
+  line-height: 10vh;
+  text-align: center;
+  transition: 1s;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+nav a i {
+  margin-right: 10px;
+}
+nav a:hover {
+  background-color: darkblue;
+}
+@media (min-width: 320px) {
+  nav a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 640px) {
+  nav a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  nav a {
+    font-size: 30px;
+  }
+}
+/* Wrap */
+.wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+/* Formularz */
+fieldset {
+  margin: 15vh 0px 10vh 5%;
+  width: 40vw;
+  color: white;
+  background-color: black;
+}
+.email {
+  width: 250px;
+}
+label,
+input,
+textarea {
+  margin: 15px 15px;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20%;
+}
+.btn:hover {
+  background-color: darkblue;
+}
+.btn:active {
+  background-color: green;
+}
+
+/* Mapa */
+iframe {
+  margin-left: 5%;
+}
+/* Contact */
+.contact {
+  padding: 10vh 5%;
+  background-color: black;
+}
+.contact p {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 10px;
+  padding: 5px 0;
+}
+.contact p i {
+  padding: 15px;
+}
+@media (min-width: 320px) and (orientation: portrait) {
+  .contact p {
+    font-size: 8px;
+  }
+}
+@media (min-width: 400px) and (orientation: portrait) {
+  .contact p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) and (orientation: portrait) {
+  .contact p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) and (orientation: portrait) {
+  .contact p {
+    font-size: 40px;
+  }
+}
+@media (min-width: 520px) and (orientation: landscape) {
+  .contact p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 760px) and (orientation: landscape) {
+  .contact p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+  .contact p {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) and (orientation: landscape) {
+  .contact p {
+    font-size: 45px;
+  }
+}
+/* Footer */
+footer {
+  height: 10vh;
+  line-height: 10vh;
+  background-color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
